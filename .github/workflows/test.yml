@@ -16,6 +16,7 @@ jobs:
       - name: Run Tests
         run: npm run test
   deploy:
+    needs: test # will run after the test job has finished
     runs-on: ubuntu-latest
     steps:
       #dowload the code
