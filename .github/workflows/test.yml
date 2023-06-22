@@ -1,5 +1,5 @@
 name: Test Project
-on: push
+on: [push, workflow_dispatch] # runs on push and can be run manually
 jobs:
   test:
     runs-on: ubuntu-latest
